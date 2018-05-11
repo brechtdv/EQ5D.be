@@ -60,6 +60,20 @@ valueset5L <-
              index = m.sums)
 
 
+## Population norms :: 11/05/2018
+load("popnormDIM.RData")
+load("popnormIND.RData")
+load("popnormVAS.RData")
+
+popnormsMO  <- popnormMO
+popnormsSC  <- popnormSC
+popnormsUA  <- popnormUA
+popnormsPD  <- popnormPD
+popnormsAD  <- popnormAD
+popnormsANY <- popnormANY
+popnormsIND <- popnormIND
+popnormsVAS <- popnormVAS
+
 ###
 ### SAVE DATA
 ###
@@ -67,4 +81,12 @@ valueset5L <-
 save(
   valueset3L,
   valueset5L,
+  popnormsMO,
+  popnormsSC,
+  popnormsUA,
+  popnormsPD,
+  popnormsAD,
+  popnormsANY,
+  popnormsIND,
+  popnormsVAS,
   file = "../R/sysdata.rda")

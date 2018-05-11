@@ -20,15 +20,15 @@ Index values
 
 Population norms
 <table>
-<tr><td><code>popnorm</code></td><td>Population norms for the EQ-5D-5L and EQ-5D VAS instruments -- main wrapper function</td></tr>
+<tr><td><code>popnorm</code></td><td>Population norms for the EQ-5D-5L and EQ-5D VAS instruments &ndash main wrapper function</td></tr>
+<tr><td><code>popnormINDEX</code></td><td>Population norms for the EQ-5D-5L index score</td></tr>
+<tr><td><code>popnormVAS</code></td><td>Population norms for the EQ-5D-5L visual analogue scale</td></tr>
 <tr><td><code>popnormMO</code></td><td>Population norms for reporting any problems of mobility</td></tr>
 <tr><td><code>popnormSC</code></td><td>Population norms for reporting any problems of self-care</td></tr>
 <tr><td><code>popnormUA</code></td><td>Population norms for reporting any problems with performing usual activities</td></tr>
 <tr><td><code>popnormPD</code></td><td>Population norms for reporting any problems of pain/discomfort</td></tr>
 <tr><td><code>popnormAD</code></td><td>Population norms for reporting any problems of anxiety/depression</td></tr>
 <tr><td><code>popnormANY</code></td><td>Population norms for reporting any problem in the EQ-5D-5L descriptive system</td></tr>
-<tr><td><code>popnormINDEX</code></td><td>Population norms for the EQ-5D-5L index score</td></tr>
-<tr><td><code>popnormVAS</code></td><td>Population norms for the EQ-5D-5L visual analogue scale</td></tr>
 </table>
 
 #### Install
