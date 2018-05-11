@@ -22,7 +22,6 @@ index5L(MO, SC, UA, PD, AD)
   \item{AD}{score for anxiety/depression; numeric or character vector.}
 }
 
-}
 \details{
 The scores can take values \code{1, 2, 3} for function \code{index3L}, and values \code{1, 2, 3, 4, 5} for function \code{index5L}.\cr
 
