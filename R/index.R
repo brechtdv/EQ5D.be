@@ -1,4 +1,4 @@
-### eq5d.be / calculate Belgian index values
+### EQ5D.be / calculate Belgian index values
 ### .. based on Cleemput (2010)
 ### .. https://doi.org/10.1007/s10198-009-0167-0
 
