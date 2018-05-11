@@ -1,11 +1,12 @@
 \name{index}
+\alias{index}
 \alias{index3L}
 \alias{index5L}
 
-\title{Functions to calculate Belgian index values for the EQ-5D descriptive system.}
+\title{Belgian index values for the EQ-5D descriptive system.}
 
 \description{
-These functions calculate index values for the EQ-5D descriptive system using the algorithm developed by Cleemput (2010).
+These functions obtain index values for the EQ-5D descriptive system using the algorithm developed by Cleemput (2010).
 }
 
 \usage{
