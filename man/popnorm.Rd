@@ -40,14 +40,14 @@ popnormANY(age = NA, sex = "B", region = "BE")
 \details{
 There are 8 parameters for which population norms are available:
 \tabular{ll}{
-	\code{\link{INDEX }}	\tab EQ-5D-5L index score.\cr
-	\code{\link{VAS}}	    \tab EQ-5D-5L visual analogue scale.\cr
-	\code{\link{MO}}		  \tab Any problems of mobility.\cr
-	\code{\link{SC}}		  \tab Any problems of self-care.\cr
-	\code{\link{UA}}		  \tab Any problems with performing usual activities.\cr
-	\code{\link{PD}}		  \tab Any problems of pain/discomfort.\cr
-	\code{\link{AD}}		  \tab Any problems of anxiety/depression.\cr
-	\code{\link{ANY}}	    \tab Any problem in the EQ-5D-5L descriptive system.\cr\cr
+	\code{INDEX }	\tab EQ-5D-5L index score.\cr
+	\code{VAS}	    \tab EQ-5D-5L visual analogue scale.\cr
+	\code{MO}		  \tab Any problems of mobility.\cr
+	\code{SC}		  \tab Any problems of self-care.\cr
+	\code{UA}		  \tab Any problems with performing usual activities.\cr
+	\code{PD}		  \tab Any problems of pain/discomfort.\cr
+	\code{AD}		  \tab Any problems of anxiety/depression.\cr
+	\code{ANY}	    \tab Any problem in the EQ-5D-5L descriptive system.\cr\cr
 }
 }
 
