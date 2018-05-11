@@ -10,16 +10,16 @@ These functions obtain index values for the EQ-5D descriptive system using the a
 }
 
 \usage{
-index3L(MO, SC, UA, AD, PD)
-index5L(MO, SC, UA, AD, PD)
+index3L(MO, SC, UA, PD, AD)
+index5L(MO, SC, UA, PD, AD)
 }
 
 \arguments{
   \item{MO}{score for mobility; numeric or character vector.}
   \item{SC}{score for self-care; numeric or character vector.}
   \item{UA}{score for usual activities; numeric or character vector.}
-  \item{AD}{score for anxiety/depression; numeric or character vector.}
   \item{PD}{score for pain/discomfort; numeric or character vector.}
+  \item{AD}{score for anxiety/depression; numeric or character vector.}
 }
 
 }
