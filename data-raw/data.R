@@ -7,7 +7,8 @@
 ## .. https://doi.org/10.1007/s10198-009-0167-0
 
 ## all possible 3L scores
-scores3L <- expand.grid(MO = 1:3, SC = 1:3, UA = 1:3, PD = 1:3, AD = 1:3)
+scores3L <- expand.grid(AD = 1:3, PD = 1:3, UA = 1:3, SC = 1:3, MO = 1:3)
+scores3L <- scores3L[, rev(colnames(scores3L))]
 
 ## define 'intercept': at least one score > 1
 int <- rep(0, nrow(scores3L))                             # perfect health
@@ -43,6 +44,7 @@ valueset3L <-
 ## all possible 5L scores
 ## .. note the reversed sequence in 'm'
 scores5L <- expand.grid(AD = 1:5, PD = 1:5, UA = 1:5, SC = 1:5, MO = 1:5)
+scores5L <- scores5L[, rev(colnames(scores5L))]
 scores5L <- with(scores5L, cbind(MO, SC, UA, PD, AD))
 
 ## load 'Probability matrix' from 'EQ-5D-5L_Crosswalk_Value_Sets'
