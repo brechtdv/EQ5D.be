@@ -1,12 +1,12 @@
 Package: EQ5D.be
 Title: EQ-5D Index Values and Population Norms for Belgium
-Version: 0.0.1
-Date: 2018-05-12
+Version: 0.0.2
+Date: 2019-07-24
 Authors@R: person("Brecht", "Devleesschauwer", role = c("aut", "cre"),
 	              email = "brechtdv@gmail.com")
 Author: Brecht Devleesschauwer [aut, cre]
 Maintainer: Brecht Devleesschauwer <brechtdv@gmail.com>
 Description: Functions to calculate EQ-5D index values and population norms
                for Belgium.
-Depends: R (>= 3.5.0)
+Depends: R (>= 3.6.0)
 License: GPL-2 | GPL-3
