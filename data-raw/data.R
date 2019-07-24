@@ -48,7 +48,7 @@ scores5L <- scores5L[, rev(colnames(scores5L))]
 scores5L <- with(scores5L, cbind(MO, SC, UA, PD, AD))
 
 ## load 'Probability matrix' from 'EQ-5D-5L_Crosswalk_Value_Sets'
-load("m.RData")
+load("m2.RData")
 
 ## product
 m.prod <- t(t(m) * valueset3L$index)
