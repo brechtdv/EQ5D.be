@@ -8,7 +8,7 @@ The `EQ5D.be` package provides functions to obtain Belgian index values for the 
 
 The index values for the EQ-5D-3L are based on [Cleemput (2010)](https://doi.org/10.1007/s10198-009-0167-0), while the index values for the EQ-5D-5L are based on the mapping function proposed by [van Hout et al. (2012)](https://doi.org/10.1016/j.jval.2012.02.008).  
 
-The population norms are based on the EQ-5D-5L results in the [Belgian Health Interview Survey 2013](https://his.wiv-isp.be/SitePages/Home.aspx).  
+The population norms are based on the EQ-5D-5L results in the [Belgian Health Interview Survey 2013 & 2018](https://his.wiv-isp.be/SitePages/Home.aspx).  
 
 #### Available functions
 
