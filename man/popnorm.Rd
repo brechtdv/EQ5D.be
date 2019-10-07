@@ -59,7 +59,7 @@ A \code{data.frame} containing the population characteristics and population nor
 }
 
 \references{
-Belgian Health Interview Survey: https://his.wiv-isp.be/
+Belgian Health Interview Survey: \url{https://his.wiv-isp.be/}
 }
 
 \author{
