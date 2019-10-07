@@ -2,7 +2,7 @@
 
 ## main wrapper function
 popnorm <-
-function(age, sex, region, parameter = "INDEX") {
+function(age, sex, region, year, parameter = "INDEX") {
   ## check argument 'age'
   age <- as.character(age)
   if (!all(age %in% as.character(c(NA, 15:100))))
@@ -21,6 +21,12 @@ function(age, sex, region, parameter = "INDEX") {
                   paste(dQuote(c("BE", "BR", "FL", "WA")),
                         collapse = ", ")))
 
+  ## check argument 'year'
+  if (!all(year %in% c(2013, 2018)))
+    stop(gettextf("'year' should be one of %s",
+                  paste(dQuote(c("2013", "2018")),
+                        collapse = ", ")))
+
   ## check argument 'parameter'
   opts <- c("INDEX", "VAS", "MO", "SC", "UA", "PD", "AD", "ANY")
   if (!all(parameter %in% opts))
@@ -30,7 +36,7 @@ function(age, sex, region, parameter = "INDEX") {
     stop("'parameter' should be of length 1")
 
   ## compile dataframe
-  df <- data.frame(age, sex, region, stringsAsFactors = FALSE)
+  df <- data.frame(age, sex, region, year, stringsAsFactors = FALSE)
 
   ## get popnorms table
   popnorms <-
@@ -54,41 +60,82 @@ function(age, sex, region, parameter = "INDEX") {
 
 ## specific functions
 popnormINDEX <-
-function(age = NA, sex = "B", region = "BE") {
-  popnorm(age = age, sex = sex, region = region, parameter = "INDEX")
+function(age = NA, sex = "B", region = "BE", year = 2018) {
+  popnorm(
+    age = age,
+    sex = sex,
+    region = region,
+    year = year,
+    parameter = "INDEX")
 }
 
 popnormVAS <-
-function(age = NA, sex = "B", region = "BE") {
-  popnorm(age = age, sex = sex, region = region, parameter = "VAS")
+function(age = NA, sex = "B", region = "BE", year = 2018) {
+  popnorm(
+    age = age,
+    sex = sex,
+    region = region,
+    year = year,
+    parameter = "VAS")
 }
 
 popnormMO <-
-function(age = NA, sex = "B", region = "BE") {
-  popnorm(age = age, sex = sex, region = region, parameter = "MO")
+function(age = NA, sex = "B", region = "BE", year = 2018) {
+  popnorm(
+    age = age,
+    sex = sex,
+    region = region,
+    year = year,
+    parameter = "MO")
 }
 
 popnormSC <-
-function(age = NA, sex = "B", region = "BE") {
-  popnorm(age = age, sex = sex, region = region, parameter = "SC")
+function(age = NA, sex = "B", region = "BE", year = 2018) {
+  popnorm(
+    age = age,
+    sex = sex,
+    region = region,
+    year = year,
+    parameter = "SC")
 }
 
 popnormUA <-
-function(age = NA, sex = "B", region = "BE") {
-  popnorm(age = age, sex = sex, region = region, parameter = "UA")
+function(age = NA, sex = "B", region = "BE", year = 2018) {
+  popnorm(
+    age = age,
+    sex = sex,
+    region = region,
+    year = year,
+    parameter = "UA")
 }
 
 popnormPD <-
-function(age = NA, sex = "B", region = "BE") {
-  popnorm(age = age, sex = sex, region = region, parameter = "PD")
+function(age = NA, sex = "B", region = "BE", year = 2018) {
+  popnorm(
+    age = age,
+    sex = sex,
+    region = region,
+    year = year,
+    parameter = "PD")
 }
 
 popnormAD <-
-function(age = NA, sex = "B", region = "BE") {
-  popnorm(age = age, sex = sex, region = region, parameter = "AD")
+function(age = NA, sex = "B", region = "BE", year = 2018) {
+  popnorm(
+    age = age,
+    sex = sex,
+    region = region,
+    year = year,
+    parameter = "AD")
 }
 
 popnormANY <-
-function(age = NA, sex = "B", region = "BE") {
-  popnorm(age = age, sex = sex, region = region, parameter = "ANY")
+function(age = NA, sex = "B", region = "BE", year = 2018) {
+  popnorm(
+    age = age,
+    sex = sex,
+    region = region,
+    year = year,
+    parameter = "ANY")
 }
+

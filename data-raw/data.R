@@ -62,19 +62,51 @@ valueset5L <-
              index = m.sums)
 
 
-## Population norms :: 11/05/2018
-load("popnormDIM.RData")
-load("popnormIND.RData")
-load("popnormVAS.RData")
+## Population norms :: 06/10/2018
+load("2013/popnormMO.RData")
+popnormsMO <- cbind(tab, year = 2013)
+load("2018/popnormMO.RData")
+popnormsMO <- rbind(popnormsMO, cbind(tab, year = 2018))
 
-popnormsMO  <- popnormMO
-popnormsSC  <- popnormSC
-popnormsUA  <- popnormUA
-popnormsPD  <- popnormPD
-popnormsAD  <- popnormAD
-popnormsANY <- popnormANY
-popnormsIND <- popnormIND
-popnormsVAS <- popnormVAS
+load("2013/popnormSC.RData")
+popnormsSC <- cbind(tab, year = 2013)
+load("2018/popnormSC.RData")
+popnormsSC <- rbind(popnormsSC, cbind(tab, year = 2018))
+
+load("2013/popnormDA.RData")
+popnormsUA <- cbind(tab, year = 2013)
+load("2018/popnormDA.RData")
+popnormsUA <- rbind(popnormsUA, cbind(tab, year = 2018))
+
+load("2013/popnormPD.RData")
+popnormsPD <- cbind(tab, year = 2013)
+load("2018/popnormPD.RData")
+popnormsPD <- rbind(popnormsPD, cbind(tab, year = 2018))
+
+load("2013/popnormAD.RData")
+popnormsAD <- cbind(tab, year = 2013)
+load("2018/popnormAD.RData")
+popnormsAD <- rbind(popnormsAD, cbind(tab, year = 2018))
+
+load("2013/popnormANY1.RData")
+popnormsANY <- cbind(tab, year = 2013)
+load("2018/popnormANY1.RData")
+popnormsANY <- rbind(popnormsANY, cbind(tab, year = 2018))
+
+load("2013/popnormindex.RData")
+popnormsIND <- cbind(tab, year = 2013)
+load("2018/popnormindex.RData")
+popnormsIND <- rbind(popnormsIND, cbind(tab, year = 2018))
+
+load("2013/popnormVAS.RData")
+popnormsVAS <- cbind(tab, year = 2013)
+
+# NO VAS IN 2018 !!
+popnormsVAS2018 <- popnormsVAS
+popnormsVAS2018[, c("mean", "lwr", "upr", "se")] <- NA
+popnormsVAS2018[, "year"] <- 2018
+popnormsVAS <- rbind(popnormsVAS, popnormsVAS2018)
+
 
 ###
 ### SAVE DATA
