@@ -10,6 +10,8 @@ The index values for the EQ-5D-3L are based on [Cleemput (2010)](https://doi.org
 
 The population norms are based on the EQ-5D-5L results in the [Belgian Health Interview Survey 2013 & 2018](https://his.wiv-isp.be/SitePages/Home.aspx).  
 
+Details about the statistical estimation of the population norms is available via https://github.com/brechtdv/popnorms/.
+
 #### Available functions
 
 Index values
