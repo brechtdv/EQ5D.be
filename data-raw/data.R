@@ -34,35 +34,20 @@ valueset3L <-
   data.frame(score = apply(scores3L, 1, paste, collapse = ""),
              index = index3L)
 
-
 ## EQ-5D-5L value set
-## .. based on Cleemput (2010)
-## .. https://doi.org/10.1007/s10198-009-0167-0
-## .. based on van Hout et al. (2012)
-## .. https://doi.org/10.1016/j.jval.2012.02.008
+## .. based on Bouckaert et al. (2021)
+## .. https://kce.fgov.be/en/an-eq-5d-5l-value-set-for-belgium-%E2%80%93-how-to-value-health-related-quality-of-life
 
-## all possible 5L scores
-## .. note the reversed sequence in 'm'
-scores5L <- expand.grid(AD = 1:5, PD = 1:5, UA = 1:5, SC = 1:5, MO = 1:5)
-scores5L <- scores5L[, rev(colnames(scores5L))]
-scores5L <- with(scores5L, cbind(MO, SC, UA, PD, AD))
-
-## load 'Probability matrix' from 'EQ-5D-5L_Crosswalk_Value_Sets'
-load("m2.RData")
-
-## product
-m.prod <- t(t(m) * valueset3L$index)
-
-## rowSums
-m.sums <- rowSums(m.prod)
-
-## compile 5L value set
 valueset5L <-
-  data.frame(score = apply(scores5L, 1, paste, collapse = ""),
-             index = m.sums)
+  read.csv("EQ5D5L-value-set/EQ5D5L_value_set.csv")
+valueset5L <-
+  valueset5L[, c("state", "value")]
+names(valueset5L) <-
+  c("score", "index")
+valueset5L <-
+  subset(valueset5L, !is.na(valueset5L$score))
 
-
-## Population norms :: 06/10/2018
+## Population norms :: 09/06/2021
 load("2013/popnormMO.RData")
 popnormsMO <- cbind(tab, year = 2013)
 load("2018/popnormMO.RData")

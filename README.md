@@ -6,7 +6,9 @@ _EQ-5D Index Values and Population Norms for Belgium_
 
 The `EQ5D.be` package provides functions to obtain Belgian index values for the EQ-5D-3L and EQ-5D-5L descriptive systems, and to obtain Belgian population norms for the EQ-5D-5L descriptive system and visual analogue scale.  
 
-The index values for the EQ-5D-3L are based on [Cleemput (2010)](https://doi.org/10.1007/s10198-009-0167-0), while the index values for the EQ-5D-5L are based on the mapping function proposed by [van Hout et al. (2012)](https://doi.org/10.1016/j.jval.2012.02.008).  
+The index values for the EQ-5D-3L are based on [Cleemput (2010)](https://doi.org/10.1007/s10198-009-0167-0).
+
+The index values for the EQ-5D-5L are based on [Bouckaert et al. (2021)](https://kce.fgov.be/en/an-eq-5d-5l-value-set-for-belgium-%E2%80%93-how-to-value-health-related-quality-of-life).
 
 The population norms are based on the EQ-5D-5L results in the [Belgian Health Interview Survey 2013 & 2018](https://his.wiv-isp.be/SitePages/Home.aspx).  
 

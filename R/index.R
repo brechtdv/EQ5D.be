@@ -1,6 +1,12 @@
 ### EQ5D.be / calculate Belgian index values
-### .. based on Cleemput (2010)
-### .. https://doi.org/10.1007/s10198-009-0167-0
+
+## EQ-5D-3L value set
+## .. based on Cleemput (2010)
+## .. https://doi.org/10.1007/s10198-009-0167-0
+
+## EQ-5D-5L value set
+## .. based on Bouckaert et al. (2021)
+## .. https://kce.fgov.be/en/an-eq-5d-5l-value-set-for-belgium-%E2%80%93-how-to-value-health-related-quality-of-life
 
 index3L <-
 function(MO, SC, UA, PD, AD) {

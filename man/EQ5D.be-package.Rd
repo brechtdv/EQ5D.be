@@ -14,11 +14,11 @@ The \pkg{EQ5D.be} package provides functions to calculate Belgian index values a
   \tabular{ll}{
     Package:    \tab  EQ5D.be\cr
     Type:       \tab  Package\cr
-    Version:    \tab  0.0.4\cr
-    Date:       \tab  2021-01-20\cr
+    Version:    \tab  0.1.0\cr
+    Date:       \tab  2021-07-01\cr
     Authors:    \tab  Brecht Devleesschauwer\cr
     Maintainer: \tab  Brecht Devleesschauwer <\email{brechtdv@gmail.com}>\cr
-    Depends:    \tab  R (>= 4.0.3)\cr
+    Depends:    \tab  R (>= 4.1.0)\cr
     License:    \tab  GPL (>= 2)\cr
 }
 
