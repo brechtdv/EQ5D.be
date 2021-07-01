@@ -1,5 +1,7 @@
 ## EQ5D.be
 
+[![R build status](https://github.com/brechtdv/EQ5D.be/workflows/R-CMD-check/badge.svg)](https://github.com/brechtdv/EQ5D.be/actions?workflow=R-CMD-check)
+
 _EQ-5D Index Values and Population Norms for Belgium_
 
 The `EQ5D.be` package provides functions to obtain Belgian index values for the EQ-5D-3L and EQ-5D-5L descriptive systems, and to obtain Belgian population norms for the EQ-5D-5L descriptive system and visual analogue scale.  
