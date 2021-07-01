@@ -39,8 +39,8 @@ A \code{data.frame} containing the scores and index values.
 \references{
 \itemize{
   \item{Cleemput I. A social preference valuations set for EQ-5D health states in Flanders, Belgium. Eur J Health Econ. 2010 Apr;11(2):205-13. doi: \href{https://doi.org/10.1007/s10198-009-0167-0}{10.1007/s10198-009-0167-0}.}
-  \item{Bouckaert N, Gerkens S, Devriese S, Cleemput I. An EQ-5D-5L value set for Belgium – How to value health-related quality of life? Health Services Research (HSR) Brussels: Belgian Health Care Knowledge Centre (KCE). 2021. KCE Reports 342. D/2021/10.273/19. \url{https://kce.fgov.be/en/an-eq-5d-5l-value-set-for-belgium-%E2%80%93-how-to-value-health-related-quality-of-life}.}
-  }
+  \item{Bouckaert N, Gerkens S, Devriese S, Cleemput I. An EQ-5D-5L value set for Belgium - How to value health-related quality of life? Health Services Research (HSR) Brussels: Belgian Health Care Knowledge Centre (KCE). 2021. KCE Reports 342. D/2021/10.273/19. \url{https://kce.fgov.be/en/an-eq-5d-5l-value-set-for-belgium-\%E2\%80\%93-how-to-value-health-related-quality-of-life}}
+}
 }
 
 \author{
