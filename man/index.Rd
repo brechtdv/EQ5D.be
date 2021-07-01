@@ -52,10 +52,10 @@ Brecht Devleesschauwer <\email{brechtdv@gmail.com}>
 index3L(1, 2, 3, 3, 2)
 
 ## Obtain entire Belgian value set for EQ-5D-3L
-scores3L <- expand.grid(MO = 1:3, SC = 1:3, UA = 1:3, AD = 1:3, PD = 1:3)
-with(scores3L, index3L(MO, SC, UA, AD, PD))
+scores3L <- expand.grid(MO = 1:3, SC = 1:3, UA = 1:3, PD = 1:3, AD = 1:3)
+with(scores3L, index3L(MO, SC, UA, PD, AD))
 
 ## Obtain entire Belgian value set for EQ-5D-5L
-scores5L <- expand.grid(MO = 1:5, SC = 1:5, UA = 1:5, AD = 1:5, PD = 1:5)
-with(scores5L, index5L(MO, SC, UA, AD, PD))
+scores5L <- expand.grid(MO = 1:5, SC = 1:5, UA = 1:5, PD = 1:5, AD = 1:5)
+with(scores5L, index5L(MO, SC, UA, PD, AD))
 }
